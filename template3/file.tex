@@ -1,0 +1,237 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Varad Belwalkar}} & Email: \href{mailto:}{belwalkarvarad@gmail.com}\\
+   \href{https://github.com/VaradBelwalkar}{Github: ~~github.com/VaradBelwalkar} &  Mobile:~~~+91-9766341094 \\   
+  \href{https://hub.docker.com/u/VaradBelwalkar}{Docker: ~~hub.docker.com/VaradBelwalkar} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {D Y Patil college of engineering and technology}{Kolhapur, India}
+      {Bachelor of Technology - Computer Science and Engineering;  GPA: 8.46}{2020-ongoing}
+     \resumeSubheading
+      {S.M. Lohiya Highschool\hspace{0.21cm} $|$ \hspace{0.18cm}New College, Kolhapur}{Kolhapur, India}
+      {Grade:  96.2\% \hspace{2.3cm}$|$ \hspace{0.2cm}HSC, 12th Grade: 83.3\%}{2018 $|$ 2020}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~~~~~~~~~C/C++, Go, Python, JavaScript, PHP, Bash, SQL, \LaTeX}
+	\resumeSubItem{Software Tools}{~~~~~~~Git, GitHub, Docker, Jenkins, Wireshark, Kubernetes, Ansible, Localstack, Terraform(Localstack)}
+	\resumeSubItem{Databases}{~~~~~~~~~~~~~~MySQL, MongoDB, Redis}
+	\resumeSubItem{Web Dev.}{~~~~~~~~~~~~~~~HTML5, CSS3, JavaScript, Node.js, ReactJS, ExpressJS, Django}
+	\resumeSubItem{Platforms}{~~~~~~~~~~~~~~~Linux,FreeBSD, and Windows}
+        \resumeSubItem{Routing/Switching}{~GNS3 and EVE-NG}
+        \resumeSubItem{Firewalls}{~~~~~~~~~~~~~~~~Palo-Alto, Fortigate}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Google Summer of Code - Submitty}{Remote}
+    {Student Developer (Full-time)}{May 2019 - Sep 2019}
+    \resumeItemListStart
+        \resumeItem{Discussion Forum Upgrades}
+          {Refactor forum for performance to handle large databases.}
+          \resumeItem{REST API for Discussion Forum}/
+          {Symphony \& Twig based Forum parts converted to API-first interface.}
+          \resumeItem{Ratchet PHP WebSocket}{Implemented a WebSocket for low-latency real time exchange of posts and thread updates.}
+      \resumeItemListEnd
+\vspace{-5pt}
+    \resumeSubheading
+		{DataCamp Inc.}{Remote}
+		{Instructor (Part-time, Contractual)}{Dec 2018 -  Present}
+		\resumeItemListStart
+        \resumeItem{Project Course - Find Movie Similarity from Plot Summaries}
+          {Created project based course using Unsupervised learning and natural language processing.}
+        \resumeItem{Tutorial - Introduction to Reinforcement Learning}
+          {Created tutorial for Q-learning RL algorithm and  concepts.}
+        \resumeItem{Impact}{Course has been taken by 250+ students so far with 4.65 average rating.}
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading{Compute Services   \textnormal{$|$ \textit{Distributed Systems}}}{}
+    {}{}\vspace{-12pt}
+    \resumeItemListStart
+        \resumeItem{}
+          {Engineered backend in Go to provide storage and container services by utilizing docker-SDK for Go}
+          \resumeItem{}
+          {Used \textbf{MongoDB} for storage, \textbf{Redis} for faster workflow, Computing platform, and Cookie-based sessions}
+          \resumeItem{}{Implemented Client in Go with conventional security practices and hybrid encryption}
+          \resumeItem{}{Implemented CI/CD pipeline using \textbf{Jenkins} to automate the build, test, and deployment process}
+      \resumeItemListEnd
+
+%---------------Project2----------------------------
+    \resumeSubheading
+		{Load Balancing standalone docker engines \textnormal{$|$ \textit{Hobby Research Project} }}{2023-ongoing}
+		{}{}\vspace{-12pt}
+		\resumeItemListStart
+        \resumeItem{}
+          {Developing a custom \textbf{load-balancer} in \textbf{Go} to facilitate the load balancing on multiple nodes}
+        \resumeItem{}
+          {Service is in development and implementation following the Raft consensus algorithm}
+
+		\resumeItemListEnd
+%----------------Project3-----------------------------------
+\resumeSubheading
+		{Ethereum-Facilitated Secure Tunnelling  \textnormal{$|$ \textit{Blockchain Technology}}}{}
+		{}{}\vspace{-12pt}
+		\resumeItemListStart
+        \resumeItem{}
+          {Leveraging Smart Contracts on the PoA test network sepolia  for End-to-End highly concurrent Webhook interface between client and server behind NAT, with RESTful client implemented in Django}
+        \resumeItem{}
+          {Only Contract owners will be able to communicate through the tunnel}
+
+		\resumeItemListEnd
+
+%----------------Project4-----------------------------------
+\resumeSubheading
+		{Docker-DHCP on host bridge \textnormal{$|$ \textit{Networking}}}{2023-ongoing}
+		{}{}\vspace{-12pt}
+		\resumeItemListStart
+        \resumeItem{}
+          {Building a network driver for networking on a host bridge with DHCP-allocated IP addresses in Go}
+        \resumeItem{Tutorial - Introduction to Reinforcement Learning}
+          {Created tutorial for Q-learning RL algorithm and  concepts.}
+        \resumeItem{Impact}{Course has been taken by 250+ students so far with 4.65 average rating.}
+		\resumeItemListEnd
+
+%----------------Project5---------------------------------
+\resumeSubheading
+		{Scalable Platform as a Service  \textnormal{$|$ \textit{System Design}}}{}
+		{}{}\vspace{-12pt}
+		\resumeItemListStart
+        \resumeItem{}
+          {Built an \textbf{auto-scaling} container-based PaaS framework by implementing NGINX reverse-proxy to load-balance services controlled by replicated \textbf{Django-server} through Docker-Swarm}
+        \resumeItem{}
+          {Provided a deployment platform, auto-configuring clients for Linux and Windows systems and TLS verification and encryption from the client side}
+		\resumeItemListEnd
+
+%----------------Project6----------------------------------
+\resumeSubheading
+		{Web-based Labs   \textnormal{$|$ \textit{Web application}}}{2022-ongoing}
+		{}{}\vspace{-12pt}
+		\resumeItemListStart
+        \resumeItem{}
+          {Developing a User-friendly Web app with \textbf{ReactJS} providing services offered by the Compute service framework}
+        \resumeItem{}
+          {Implementing a built-in terminal and various conventional practices and security features}
+		\resumeItemListEnd
+
+%----------------Project7----------------------------------
+\resumeSubheading
+		{D-RAM Addressing Attack  \textnormal{$|$ \textit{Computer architecture}}}{}
+		{}{}\vspace{-12pt}
+		\resumeItemListStart
+        \resumeItem{}
+          {Performed a timing attack on intel core i5 to reverse engineer the confidential address mappings}
+        \resumeItem{}
+          {Established a \textbf{Covert-Channel} to perform illicit inter-process communication between the host and isolated VM}
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\section{Position and Responsibility}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+    {}{DYPCET}
+    {Carried out Linux-Wargames and took Linux-related sessions}{}
+\vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Experience}}
+    \resumeSubheading
+    {Event Organizer at Google Developers Group Kolkata}{Kolkata, India}
+    {Organized events, conducted workshops and delivered workshops reaching over 7000 developers.}{Jan 2018 - Present}
+
+\resumeSubHeadingListEnd
+
+\end{document}
