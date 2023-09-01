@@ -1,0 +1,118 @@
+\documentclass[10pt,a4paper,sans]{moderncv}     
+
+\moderncvstyle[norules]{banking}                        
+\moderncvcolor{green}                            
+
+\usepackage[utf8]{inputenc}                      
+
+\usepackage[top=1.2cm,bottom=0.5cm,scale=0.85]{geometry}
+
+\name{\textnormal{Varad}}{\textnormal{Belwalkar\vspace{0.15cm}}} 
+                 
+\email{belwalkarvarad@gmail.com} 
+
+\phone{+91 9766341094}
+
+\extrainfo{\quad \faDocker\href{https://hub.docker.com/u/varadbelwalkar}{hub.docker.com/u/varadbelwalkar} \faGithub\href{https://github.com/VaradBelwalkar}{ github.com/VaradBelwalkar} }
+
+
+\renewcommand\labelitemi{%
+\strut
+\raisebox{1.2pt}{\textcolor {color1}{\tiny \faCircle [regular]}}}
+
+\begin{document}
+
+\makecvtitle
+{\kern-10mm}
+
+\section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{  Education}}
+
+\cventry{}{Bachelor}{D Y Patil college of engineering and technology, Kolhapur}{\textnormal{2020-ongoing}}{\textit{Computer Science and Engineering $|$ \textnormal{CGPA: 8.46} }}{}
+\cventry{}{SSC}{S.M. Lohiya Highschool\hspace{0.21cm} $|$ \hspace{0.18cm}New College, Kolhapur}{\textnormal{2018 $|$ 2020}}{\textit{10th $|$ \textnormal{Grade:  96.2\% \hspace{0.2cm}$|$ \hspace{0.2cm}HSC, 12th Grade: 83.3\%} }}{}
+{\kern-2mm}
+
+
+\section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{ Experience}}
+\cventry{}{}{}{}{}{}{\kern-5mm}{\cvlistitem{
+    Deployed and maintaining the college server to ensure seamless access and availability of resources for students and faculties
+}}
+\cventry{}{}{}{}{}{}{\kern-5mm}{\cvlistitem{
+    Published PaaS Framework as Docker image which has over \textbf{2.8K+} pulls on Docker Hub
+}}
+
+\section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{  Key Projects}}
+
+\cventry{}{}{Compute Services   \textnormal{$|$ \textit{Distributed Systems}}}{}{}{}{\kern-5mm}{\cvlistitem{
+    Engineered backend in \textbf{Go} to provide storage and container services by utilizing docker-SDK for Go
+}
+\cvlistitem{Used \textbf{MongoDB} for storage, \textbf{Redis} for faster workflow, Computing platform, and Cookie-based sessions}
+\cvlistitem{Implemented Client in Go with conventional security practices and hybrid encryption}
+\cvlistitem{Implemented CI/CD pipeline using \textbf{Jenkins} to automate the build, test, and deployment process}}
+
+
+\cventry{\textnormal{}}{}{Load Balancing standalone docker engines \textnormal{$|$ \textit{Hobby Research Project} }}{\textnormal{2022-ongoing}}{}{}{\kern-5mm} {\cvlistitem{Developing a custom \textbf{load-balancer} in \textbf{Go} to facilitate the load balancing on multiple nodes} 
+\cvlistitem{Service is in development and implementation following the Raft consensus algorithm}}
+
+\vspace{0.15cm}
+
+
+\cventry{}{}{Ethereum-Facilitated Secure Tunnelling  \textnormal{$|$ \textit{Blockchain Technology}}}{}{}{}{\kern-5mm}{\cvlistitem{
+    Leveraging Smart Contracts on the PoA test network sepolia  for End-to-End highly concurrent Webhook interface between client and server behind NAT, with RESTful client implemented in Django
+}
+\cvlistitem{
+    Only Contract owners will be able to communicate through the tunnel 
+}
+}
+
+
+\cventry{}{}{Docker-DHCP on host bridge \textnormal{$|$ \textit{Networking}}}{\textnormal{2023-ongoing}}{}{}{\kern-5mm}{\cvlistitem{
+    Building a network driver for networking on a host bridge with DHCP-allocated IP addresses in Go
+}
+}
+
+
+
+
+\vspace{0.15cm}
+
+\cventry{}{}{Scalable Platform as a Service  \textnormal{$|$ \textit{System Design}}}{}{}{}{\kern-5mm}{\cvlistitem{
+    Built an \textbf{auto-scaling} container-based PaaS framework by implementing NGINX reverse-proxy to load-balance services controlled by replicated \textbf{Django-server} through Docker-Swarm
+}
+\cvlistitem{
+    Provided a deployment platform, auto-configuring clients for Linux and Windows systems and TLS verification and encryption from the client side
+}
+}
+
+\vspace{0.15cm}
+
+
+
+\cventry{}{}{Web-based Labs   \textnormal{$|$ \textit{Web application}}}{\textnormal{2022-ongoing}}{}{}{\kern-5mm}{\cvlistitem{
+    Developing a User-friendly Web app with \textbf{ReactJS} providing services offered by the Compute service framework 
+}
+\cvlistitem{Implementing a built-in terminal and various conventional practices and security features   }
+}
+
+\vspace{0.15cm}
+
+\cventry{}{}{D-RAM Addressing Attack  \textnormal{$|$ \textit{Computer architecture}}}{}{}{}{\kern-5mm}{\cvlistitem{
+    Performed a timing attack on intel core i5 to reverse engineer the confidential address mappings
+}
+\cvlistitem{Established a \textbf{Covert-Channel} to perform illicit inter-process communication between the host and isolated VM}
+}
+{\kern-2mm}
+\section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{  Technical Skills}}
+\cvitem{Languages}{C/C++, Go, Python, JavaScript, PHP, Bash, SQL, \LaTeX}
+\cvitem{Software Tools}{git, GitHub, Docker, Jenkins, Wireshark, Kubernetes, Ansible, Localstack, Terraform(Localstack)} 
+\cvitem{Databases}{MySQL, MongoDB, Redis}
+\cvitem{Web Development}{HTML5, CSS3, JavaScript, Node.js, ReactJS, ExpressJS, Django}
+\cvitem{Web servers}{ Apache, Nginx}
+\cvitem{Platforms}{Linux,FreeBSD, and Windows}
+\cvitem{Routing and Switching}{GNS3 and EVE-NG}
+\cvitem{Firewalls}{Palo-Alto, Fortigate}
+{\kern-2mm}
+\section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{  Position and Responsibility}}
+\cvlistitem{Carried out Linux-Wargames and took Linux-related sessions}
+
+\clearpage
+\end{document}5

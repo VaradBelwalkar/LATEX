@@ -5,12 +5,16 @@
 
 \usepackage[utf8]{inputenc}                      
 
-\usepackage[top=1.5cm,bottom=1cm,scale=0.85]{geometry}
+\usepackage[top=1.2cm,bottom=0.5cm,scale=0.85]{geometry}
 
 \name{\textnormal{Varad}}{\textnormal{Belwalkar\vspace{0.15cm}}} 
                  
 \email{belwalkarvarad@gmail.com} 
-\extrainfo{\faGithub\href{https://github.com/VaradBelwalkar}{ github.com/VaradBelwalkar}}
+
+\phone{+91 9766341094}
+
+\extrainfo{\quad \faDocker\href{https://hub.docker.com/u/varadbelwalkar}{hub.docker.com/u/varadbelwalkar} \faGithub\href{https://github.com/VaradBelwalkar}{ github.com/VaradBelwalkar} }
+
 
 \renewcommand\labelitemi{%
 \strut
@@ -23,42 +27,19 @@
 
 \section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{  Education}}
 
-\cventry{}{Bachelor}{D Y Patil college of engineering and technology, Kolhapur}{\textnormal{2021-ongoing}}{\textit{Computer Science and Engineering $|$ \textnormal{CGPA: 8.46} }}{}
+\cventry{}{Bachelor}{D Y Patil college of engineering and technology, Kolhapur}{\textnormal{2020-ongoing}}{\textit{Computer Science and Engineering $|$ \textnormal{CGPA: 8.46} }}{}
+\cventry{}{SSC}{S.M. Lohiya Highschool\hspace{0.21cm} $|$ \hspace{0.18cm}New College, Kolhapur}{\textnormal{2018 $|$ 2020}}{\textit{10th $|$ \textnormal{Grade:  96.2\% \hspace{0.2cm}$|$ \hspace{0.2cm}HSC, 12th Grade: 83.3\%} }}{}
 {\kern-2mm}
-\section{\raisebox{0.085cm}{\rule{2.5cm}{0.15cm}}\textnormal{ Research Projects}}
-
-\cventry{\textnormal{}}{}{Load Balancing standalone docker engines \textnormal{$|$ \textit{Hobby Research Project} }}{\textnormal{2022-ongoing}}{}{}{\kern-5mm} {\cvlistitem{Developing a custom \textbf{load-balancer} in \textbf{Go} to facilitate the load balancing on multiple nodes} 
-\cvlistitem{Service is in development and implementation following the Raft consensus algorithm}}
-
-\vspace{0.15cm}
 
 
-\cventry{}{}{Ethereum-Facilitated Secure Tunnelling  \textnormal{$|$ \textit{Blockchain Technology}}}{}{}{}{\kern-5mm}{\cvlistitem{
-    Leveraging Smart Contracts on the PoA test network sepolia  for End-to-End highly concurrent connectivity interface between client and server behind NAT, with RESTful client implemented in Django
-}
-\cvlistitem{
-    Only Contract owners will be able to communicate through the tunnel 
-}
-} 
-
-\vspace{0.15cm}
-
-\cventry{}{}{Bring Localhost to the Internet!  \textnormal{$|$ \textit{Blockchain Technology}}}{\textnormal{2023-ongoing}}{}{}{\kern-5mm}{\cvlistitem{
-    Leveraging the off-chain framework Perun to support real-time communication between the server and multiple clients simultaneously
-}
-\cvlistitem{
-    Only Authorized users will be able to communicate through the tunnel 
-}
-} 
-
-\vspace{0.15cm}
-
-\cventry{}{}{Published PaaS Framework as Docker image which has over 2.8K+ pulls on Docker Hub }{}{}{}{\kern-5mm}{} 
-{\kern-1mm}
 \section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{ Experience}}
-\cventry{}{}{Deployed and maintaining the cloud server for college }{}{}{}{\kern-5mm}{} 
+\cventry{}{}{}{}{}{}{\kern-5mm}{\cvlistitem{
+    Deployed and maintaining the college server to ensure seamless access and availability of resources for students and faculties
+}}
+\cventry{}{}{}{}{}{}{\kern-5mm}{\cvlistitem{
+    Published PaaS Framework as Docker image which has over \textbf{2.8K+} pulls on Docker Hub
+}}
 
-{\kern-1mm}
 \section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{  Key Projects}}
 
 \cventry{}{}{Compute Services   \textnormal{$|$ \textit{Distributed Systems}}}{}{}{}{\kern-5mm}{\cvlistitem{
@@ -69,11 +50,23 @@
 \cvlistitem{Implemented CI/CD pipeline using \textbf{Jenkins} to automate the build, test, and deployment process}}
 
 
-\cventry{}{}{Integration Service \textnormal{$|$ \textit{Microservices}}}{}{}{}{\kern-5mm}{\cvlistitem{
-    Built an integration platform in Go for various online services to integrate into any cloud infrastructure 
+\cventry{\textnormal{}}{}{Load Balancing standalone docker engines \textnormal{$|$ \textit{Hobby Research Project} }}{\textnormal{2022-ongoing}}{}{}{\kern-5mm} {\cvlistitem{Developing a custom \textbf{load-balancer} in \textbf{Go} to facilitate the load balancing on multiple nodes} 
+\cvlistitem{Service is in development and implementation following the Raft consensus algorithm}}
+
+\vspace{0.15cm}
+
+
+\cventry{}{}{Ethereum-Facilitated Secure Tunnelling  \textnormal{$|$ \textit{Blockchain Technology}}}{}{}{}{\kern-5mm}{\cvlistitem{
+    Leveraging Smart Contracts on the PoA test network sepolia  for End-to-End highly concurrent Webhook interface between client and server behind NAT, with RESTful client implemented in Django
 }
 \cvlistitem{
-    Implemented Authentication via secured cookie-based sessions, and Email verification service
+    Only Contract owners will be able to communicate through the tunnel 
+}
+}
+
+
+\cventry{}{}{Docker-DHCP on host bridge \textnormal{$|$ \textit{Networking}}}{\textnormal{2023-ongoing}}{}{}{\kern-5mm}{\cvlistitem{
+    Building a network driver for networking on a host bridge with DHCP-allocated IP addresses in Go
 }
 }
 
@@ -109,13 +102,17 @@
 }
 {\kern-2mm}
 \section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{  Technical Skills}}
-\cvitem{Languages}{C/C++, Python, JavaScript, Bash, SQL, Go, \LaTeX \hspace{21mm}\textbf{Platforms}: Linux and Windows}
-\cvitem{Software Tools}{git, GitHub, Docker, Jenkins, Wireshark, Kubernetes \hspace{20mm}\textbf{Web servers}: Apache, Nginx} 
-\cvitem{Databases}{MySQL, PostgreSQL, MongoDB, Redis}
+\cvitem{Languages}{C/C++, Go, Python, JavaScript, PHP, Bash, SQL, \LaTeX}
+\cvitem{Software Tools}{git, GitHub, Docker, Jenkins, Wireshark, Kubernetes, Ansible, Localstack, Terraform(Localstack)} 
+\cvitem{Databases}{MySQL, MongoDB, Redis}
 \cvitem{Web Development}{HTML5, CSS3, JavaScript, Node.js, ReactJS, ExpressJS, Django}
+\cvitem{Web servers}{ Apache, Nginx}
+\cvitem{Platforms}{Linux,FreeBSD, and Windows}
+\cvitem{Routing and Switching}{GNS3 and EVE-NG}
+\cvitem{Firewalls}{Palo-Alto, Fortigate}
 {\kern-2mm}
 \section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{  Position and Responsibility}}
-\cvlistitem{Carried out Linux-Wargames, took Linux-related sessions, and established DYP-Linux Users’ Group}
+\cvlistitem{Carried out Linux-Wargames and took Linux-related sessions}
 
 \clearpage
-\end{document}
+\end{document}5
