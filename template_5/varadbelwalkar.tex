@@ -1,5 +1,9 @@
 \documentclass[]{deedy-resume-openfont}
-
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -7,18 +11,14 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \lastupdated
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\namesection{Vishnu Vardhan}{Dhanabalan}
-{131 Dell st, Syracuse, NY 13210 | 
-\href{mailto:vdhanaba@syr.edu}{vdhanaba@syr.edu} | 315.560.3045 |  \urlstyle{same}\url{linkedin.com/in/vishnudhanabalan}
+\namesection{Davi}{Silva}{ \urlstyle{same}\href{https://github.com/Davi-Silva}{github.com/Davi-Silva} | \href{https://www.linkedin.com/in/davicsilva/}{linkedin.com/in/davicsilva/} | \href{mailto:davi.cunha.silva.ca@gmail.com}{davi.cunha.silva.ca@gmail.com}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -27,25 +27,42 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.25\textwidth} 
+\begin{minipage}[t]{0.49\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     WORK EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+\runsubsection{Nextly}
+\descript{| Business Strategist }
+\location{Jul 2019 - Present | São Paulo, SP, Brazil}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Focused on strategies to allow the company expansion to overseas territories such as the US, Canada, and Europe.
+\item Developed new internal procedures and improved existing ones to maximize sales results.
+\item Supervised development teams to ensure the software quality required by the partners.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Nerit}
+\descript{| Frontend Developer }
+\location{Sep 2017 – Nov 2017 | Belo Horizonte, MG, Brazil}
+\begin{tightemize}
+\item Responsible for the development of websites based on the company customer's needs.
+\item Maintained and improved proprietary software used internally by the company.
+\end{tightemize}
+\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Education} 
-\subsection{Syracuse University}
-\sectionsep
-\descript{M.S. in Electrical Engineering}
-% \sectionsep
-\location{Dec 2015 | Syracuse, NY}
-\sectionsep
 
-\subsection{Anna University}
-\sectionsep
-\descript{B.E. in Electrical and Electronics Engineering}
-% \sectionsep
-\location{May 2013 | Chennai, India}
+\subsection{PUC Minas}
+\descript{Bachelor in Computer Science}
+\location{Dec 2021 | Belo Horizonte, MG, Brazil}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,63 +70,27 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-% \sectionsep
-\subsection{Programming}
-% \sectionsep
-% \location{Over 5000 lines:}
-C/C++ \textbullet{}   Python \textbullet{} Java \textbullet{} Assembly
-DSP kit coding \textbullet{} \LaTeX \textbullet{} familiar with JavaScript
+\subsection{Technical Skills}
+\location{Proficient with}
+JavaScript \textbullet{} TypeScript \textbullet{} Node.js \textbullet{} Express.js \\
+React \textbullet{} Redux \textbullet{} Python \textbullet{} C \textbullet{} C++ \textbullet{} Solidity \\ ERC-20 \textbullet{} Git \textbullet{} MongoDB \textbullet{} Postgres \textbullet{} MySQL \\ HTML5 \textbullet{} CSS3 \textbullet{} AWS \textbullet{} Heroku \textbullet{} Netlify \textbullet{} Agile Development \textbullet{} Linux \textbullet{} Arduino \textbullet{} TDD \textbullet{} Circuit\\Prototyping \\
+\location{Familiar with:}
+C\# \textbullet{} PHP \textbullet{} Java \textbullet{} Native Android Development \\ Docker \textbullet{} Assembly \textbullet{} Raspberry Pi
 \sectionsep
-\subsection{Software Tools}
-% \sectionsep
-MATLAB \textbullet{} Simulink \textbullet{} MS Visual Studio \textbullet{} Eclipse \textbullet{} Xcode \textbullet{} various DAWs \textbullet{} Perforce \textbullet{} GIT
-\sectionsep
-\subsection{Hardware}
-% \sectionsep
-Motorola DSP563xx family \textbullet{} Raspberry Pi \textbullet{} BeagleBone XM and Black \textbullet{} Arduino 
-\sectionsep
-\subsection{OS}
-% \sectionsep
-Windows \textbullet{} Mac OS \textbullet{} Ubuntu \textbullet{} Rasbian 
-\sectionsep
-% \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Soft Skills}
+\location{Strong}
+Leadership \textbullet{} Resourcefulness \textbullet{} Grit \textbullet{} Public Speaking \\
+Stock Investing \textbullet{} Cryptocurrency Investing
+\sectionsep
 
-\section{Coursework}
-% \sectionsep
-\subsection{Graduate}
-\sectionsep
-Digital Audio Signal Processing\\
-% \sectionsep
-Real-time Signal Processing\\
-% \sectionsep
-Embedded System Design\\
-% \sectionsep
-Control of Robots\\
-% \sectionsep
-Modern Radar Tracking\\
-\sectionsep
-% \sectionsep
-\subsection{Undergraduate}
-\sectionsep
-Electronic Circuit Design\\
-% \sectionsep
-Object Oriented Programming\\
-% \sectionsep
-Data Structures\\
-% \sectionsep
-Micro controllers and processors
-% \sectionsep
-% \sectionsep
+\section{Languages}
+\subsection{Proficiency Level}
+\location{Native proficiency:}
+Portuguese \textbullet{} English \\
+\location{Working proficiency:}
+Spanish
 
-\section{Presentations}
-
-\subsection{Guitar Distortion using VST plugins} 
-\sectionsep
-shortlisted for final round of International Student Design competition at Audio Engineering Society Convention, New York City, 2015.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN TWO
@@ -118,78 +99,60 @@ shortlisted for final round of International Student Design competition at Audio
 
 \end{minipage} 
 \hfill
-\begin{minipage}[t]{0.73\textwidth} 
+\begin{minipage}[t]{0.5\textwidth} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EXPERIENCE
+%    ENTREPRENEURIAL EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Experience}
+\section{Entrepreneurial Experience}
 
-\runsubsection{Euphony Inc.}
-\descript{| Speech Processing Software Developer intern }
-\location{Sep 2015 - Dec 2015 | Syracuse, NY}
+\runsubsection{Cryptic Activist}
+\descript{| Founder \& CEO}
+\location{Oct 2019 – Present}
+\descript{Under development}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed a prototype for assisting people with speech disorders like Dysprosody. 
-\item Created MATLAB System objects for implementing preprocessing techniques on recorded voice samples.
-\item Worked with mobile and web application developers to transform the prototype into a working model.
+\item An online platform for publishing blog posts and articles by the community, weekly podcast episodes, and online courses primarily focused on blockchain development, blockchain real-life applications, cypherpunk and libertarian topics.
 \end{tightemize}
+\location{Technologies used: MongoDB, Express.js, React, Redux, Node.js, Solidity, ERC-20, Pyhthon, C++} 
 \sectionsep
 
-\runsubsection{The MathWorks Inc.}
-\descript{| DSP System Toolbox Development intern }
-\location{May 2015 - Aug 2015 | Natick, MA}
+\runsubsection{Canada Cannabyss}
+\descript{| Co-founder \& CTO }
+\location{May 2019 - Present | Victoria, BC, Canada}
+\descript{Current monthly revenue: C\$ 7.000/month}
 \begin{tightemize}
-\item Developed and tested demo examples for beta release of a new upcoming System Toolbox. 
-\item Worked closely with user experience specialist to evaluate feedback from usability sessions on various features in the System Toolbox.
-\item Created System objects and Simulink blocks for echo, flanger, chorus effects and delay filter. Programmed in C++ and MATLAB to support interpreted execution and code-gen in Simulink.
+\item Developed the identity of the Canada Cannabyss brand.
+\item Create internal procedures and workflows to maximize development outcomes. 
+\item Launched the brand in the market during the early-stage cannabis legalization in Canada.
+\item Developed all software used at Canada Cannabyss such as resource and sales management, data visualization and security.
 \end{tightemize}
+\location{Technologies used: Python, Django, TensorFlow, matplotlib, Postgres} 
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PROJECTS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Projects}
-% \sectionsep
+\runsubsection{Canada E-Cigs}
+\descript{| Co-owner \& CTO }
+\location{Jan 2019 – Present | Edmonton, AB, Canada}
+\descript{Current monthly revenue: C\$ 8.000/month}
+\begin{tightemize}
+\item Responsible for the development, supervision and maintenance of the entire Canada E-Cigs eCommerce Python-based ecosystem.
+\item Developed alternative marketing and SEO strategies based on the limitations due to the e-cigarettes marketing regulations. 
+\item Implemented strong Python-based technologies for data visualization, to better understand all the data generated by the company to enhance future business decisions
+\end{tightemize}
+\location{Technologies used: Python, Django, TensorFlow, matplotlib, Postgres} 
 \sectionsep
 
-\runsubsection{Distortion effect VST Plugin in C++ using RackAFX} \location{Oct 2015}
-Created VST audio plugins for guitar distortion effect, by digitally modeling the analog circuit. Programmed the plugin in C++ by utilizing open source VST plugin API, RackAFX and Visual Studio in Windows platform. Tested the plugin with in-built RackAFX frequency analyzers and in several Digital Audio Workstations.
-
-\sectionsep
-\sectionsep
-
-\runsubsection{Short Time Fourier Transform of speech signal in C} \location{Sep 2014}
-Designed an optimized STFT algorithm for analyzing the spectral behavior of speech signal. Applied strong programming skills in C as well as improvised the application by allowing users to choose window type, size and shifting length. Emphasized the representation of the STFT output by plotting time and frequency data.
-
-\sectionsep
-\sectionsep
-
-\runsubsection{Variable fractional delay System Object in MATLAB and C++} \location{May 2015 – Aug 2015}
-Developed the algorithm for variable fractional delaying with feedback using linear interpolation technique and circular buffering. Coded in C++ (MEX) and MATLAB (Codegen) and optimized the System object to run at 32 samples per frame without dropping any samples.
-
-\sectionsep
-\sectionsep
-
-\runsubsection{Acoustic Echo Cancellation using NLMS in MATLAB} \location{Sep 2014}
-Engineered a prototype model for AEC using normalized least mean square adaptive filtering in MATLAB. Used dry voice signal as far end and echoed far end convoluted with another dry voice signal as near end signal. Implemented NLMS algorithm to update adaptive filter coefficient. Verified the functionality by comparing output and the near end signal.
-
-\sectionsep
-\sectionsep
-
-\runsubsection{Real-time compressor in audio DSP56300 using assembly language} \location{April – May 2014}
-
-Implemented the audio compressor algorithm, which comprises of RMS filtering, threshold detecting, attack and release mechanisms in MATLAB to check numeric accuracy and performance. Optimized the algorithm and coded it in PPC block of Motorola audio DSP56300 using assembly language. Evaluated the real-time performance of the process using DVD and microphone input and speaker output.
-
-\sectionsep
-\sectionsep
-
-\runsubsection{The COP Robot} \location{April – May 2015}
-Engineered an autonomous object-tracking robot that runs in open source computer vision tool OpenCV. Customized DFRobot Turtle 2WD mobile robot to design a robot with Raspberry Pi, Arduino and L293D bridge motor controller. Programmed the code in Python using OpenCV library for object detection and Arduino board serial communication. 
-
-\sectionsep
+\runsubsection{Braw}
+\descript{| Co-founder \& CTO }
+\location{Nov 2017 – Present | Belo Horizonte, MG, Brazil}
+\descript{Current monthly revenue: R\$ 25.000/month}
+\begin{tightemize}
+\item In charge of the software development for an innovative straw cigarettes mass production machine..
+\item Accountable for the marketing strategies development for the national market.
+\end{tightemize}
+\location{Technologies used: C, Python} 
 \sectionsep
 
 \end{minipage} 
