@@ -1,117 +1,248 @@
-\documentclass[10pt,a4paper,sans]{moderncv}     
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
 
-\moderncvstyle[norules]{banking}                        
-\moderncvcolor{green}                            
+\documentclass[letterpaper,11pt]{article}
 
-\usepackage[utf8]{inputenc}                      
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
 
-\usepackage[top=1.2cm,bottom=0.5cm,scale=0.85]{geometry}
 
-\name{\textnormal{Varad}}{\textnormal{Belwalkar\vspace{0.15cm}}} 
-                 
-\email{belwalkarvarad@gmail.com} 
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
 
-\phone{+91 9766341094}
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
 
-\extrainfo{\quad \faDocker\href{https://hub.docker.com/u/varadbelwalkar}{hub.docker.com/u/varadbelwalkar} \faGithub\href{https://github.com/VaradBelwalkar}{ github.com/VaradBelwalkar} }
 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-\renewcommand\labelitemi{%
-\strut
-\raisebox{1.2pt}{\textcolor {color1}{\tiny \faCircle [regular]}}}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
-\makecvtitle
-{\kern-10mm}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-\section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{  Education}}
-
-\cventry{}{Bachelor}{D Y Patil college of engineering and technology, Kolhapur}{\textnormal{2020-ongoing}}{\textit{Computer Science and Engineering $|$ \textnormal{CGPA: 8.46} }}{}
-\cventry{}{SSC}{S.M. Lohiya Highschool\hspace{0.21cm} $|$ \hspace{0.18cm}New College, Kolhapur}{\textnormal{2018 $|$ 2020}}{\textit{10th $|$ \textnormal{Grade:  96.2\% \hspace{0.2cm}$|$ \hspace{0.2cm}HSC, 12th Grade: 83.3\%} }}{}
-{\kern-2mm}
-
-
-\section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{ Experience}}
-\cventry{}{}{}{}{}{}{\kern-5mm}{\cvlistitem{
-    Deployed and maintaining the college server to ensure seamless access and availability of resources for students and faculties
-}}
-\cventry{}{}{}{}{}{}{\kern-5mm}{\cvlistitem{
-    Published PaaS Framework as Docker image which has over \textbf{2.8K+} pulls on Docker Hub
-}}
-
-\section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{  Key Projects}}
-
-\cventry{}{}{Compute Services   \textnormal{$|$ \textit{Distributed Systems}}}{}{}{}{\kern-5mm}{\cvlistitem{
-    Engineered backend in \textbf{Go} to provide storage and container services by utilizing docker-SDK for Go
-}
-\cvlistitem{Used \textbf{MongoDB} for storage, \textbf{Redis} for faster workflow, Computing platform, and Cookie-based sessions}
-\cvlistitem{Implemented Client in Go with conventional security practices and hybrid encryption}
-\cvlistitem{Implemented CI/CD pipeline using \textbf{Jenkins} to automate the build, test, and deployment process}}
+\begin{center}
+    {\Huge \scshape Varad Belwalkar} \\ \vspace{1pt}
+\hspace{1cm}
+    \small \raisebox{-0.1\height}\faPhone\ +91 9766341094 ~ \href{mailto:belwalkarvarad@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{belwalkarvarad@gmail.com}} ~ 
+    \href{https://linkedin.com/in/varadbelwalkar/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/varadbelwalkar}} \newline
+    \href{https://github.com/VaradBelwalkar}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/VaradBelwalkar}}
+    \href{https://hub.docker.com/u/varadbelwalkar}{\raisebox{-0.2\height}\faDocker\ \underline{hub.docker.com/varadbelwalkar}}
+    \vspace{-8pt}
+\end{center}
 
 
-\cventry{\textnormal{}}{}{Load Balancing standalone docker engines \textnormal{$|$ \textit{Hobby Research Project} }}{\textnormal{2023-ongoing}}{}{}{\kern-5mm} {\cvlistitem{Developing a custom \textbf{load-balancer} in \textbf{Go} to facilitate the load balancing on multiple nodes} 
-\cvlistitem{Service is in development and implementation following the Raft consensus algorithm}}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {D Y Patil college of engineering and technology, Kolhapur}{2020-ongoing}
+      {Bachelor, Computer Science and Engineering}{CGPA: 8.46}
+\resumeSubheading
+      {S.M. Lohiya Highschool\hspace{0.21cm} $|$ \hspace{0.18cm}New College, Kolhapur}{2018 $|$ 2020}
+      {\textit{10th $|$ \textnormal{Grade:  96.2\% \hspace{0.1cm}~~~~~~~~~~~~~~$|$ \hspace{0.2cm}HSC, 12th Grade: 83.3\%} }}{}
+  \resumeSubHeadingListEnd
 
-\vspace{0.15cm}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+ \vspace{-25pt}
+    \resumeSubheading
+      {}{}
+      {}{}
+      \resumeItemListStart
+        \resumeItem{Deployed and maintaining the college server to ensure seamless access and availability of resources for students and faculties.}
+        \resumeItem{Published PaaS Framework as Docker image which has over \textbf{2.8K+} pulls on Docker Hub.}
+        
+      \resumeItemListEnd
+   
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Compute Services} $|$ \emph{Distributed Systems}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered backend in \textbf{Go} to provide storage and container services by utilizing docker-SDK for Go.}
+            \resumeItem{Used \textbf{MongoDB} for storage, \textbf{Redis} for faster workflow, Computing platform, and Cookie-based sessions.}
+            \resumeItem{Implemented Client in Go with conventional security practices and hybrid encryption.}
+            \resumeItem{Implemented CI/CD pipeline using \textbf{Jenkins} to automate the build, test, and deployment process .}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Load Balancing standalone docker engines} $|$ \emph{Hobby Research Project}}{2023-ongoing}
+          \resumeItemListStart
+            \resumeItem{Developing a custom \textbf{load-balancer} in \textbf{Go} to facilitate the load balancing on multiple nodes.}
+            \resumeItem{Service is in development and implementation following the Raft consensus algorithm.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Ethereum-Facilitated Secure Tunnelling} $|$ \emph{Blockchain Technology}}{}
+          \resumeItemListStart
+            \resumeItem{Leveraging Smart Contracts on the PoA test network sepolia  for End-to-End highly concurrent Webhook interface between client and server behind NAT, with RESTful client implemented in Django.}
+            \resumeItem{Only Contract owners will be able to communicate through the tunnel.}
+          \resumeItemListEnd 
+\vspace{-13pt}
+\resumeProjectHeading
+          {\textbf{Docker-DHCP on host bridge} $|$ \emph{Networking}}{2023-ongoing}
+          \resumeItemListStart
+            \resumeItem{Building a network driver for networking on a host bridge with DHCP-allocated IP addresses in Go.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+\resumeProjectHeading
+          {\textbf{Scalable Platform as a Service} $|$ \emph{System Design}}{}
+          \resumeItemListStart
+            \resumeItem{Built an \textbf{auto-scaling} container-based PaaS framework by implementing NGINX reverse-proxy to load-balance services controlled by replicated \textbf{Django-server} through Docker-Swarm.}
+            \resumeItem{Provided a deployment platform, auto-configuring clients for Linux and Windows systems and TLS verification and encryption from the client side.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+\resumeProjectHeading
+          {\textbf{Web-based Labs} $|$ \emph{Web application}}{2022-ongoing}
+          \resumeItemListStart
+            \resumeItem{Developing a User-friendly Web app with \textbf{ReactJS} providing services offered by the Compute service framework .}
+            \resumeItem{Implementing a built-in terminal and various conventional practices and security features.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+\resumeProjectHeading
+          {\textbf{D-RAM Addressing Attack} $|$ \emph{Computer architecture}}{}
+          \resumeItemListStart
+            \resumeItem{Performed a timing attack on intel core i5 to reverse engineer the confidential address mappings .}
+            \resumeItem{Established a \textbf{Covert-Channel} to perform illicit inter-process communication between the host and isolated VM.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
 
 
-\cventry{}{}{Ethereum-Facilitated Secure Tunnelling  \textnormal{$|$ \textit{Blockchain Technology}}}{}{}{}{\kern-5mm}{\cvlistitem{
-    Leveraging Smart Contracts on the PoA test network sepolia  for End-to-End highly concurrent Webhook interface between client and server behind NAT, with RESTful client implemented in Django
-}
-\cvlistitem{
-    Only Contract owners will be able to communicate through the tunnel 
-}
-}
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Go, Python, JavaScript, PHP, Bash, Powershell, SQL, \LaTeX} \\
+     \textbf{Software Tools}{: Git, GitHub, Docker, Jenkins, Wireshark, Kubernetes, Ansible, Localstack, Terraform(Localstack)} \\
+     \textbf{Databases}{: MySQL, MongoDB, SQLite, Redis} \\
+\textbf{Web Dev}{: HTML5, CSS3, JavaScript, Node.js, ReactJS, ExpressJS, Django} \\
+\textbf{Routing and Switching}{: GNS3 and EVE-NG} \\
+\textbf{Firewalls}{: Palo-Alto, Fortigate} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
 
 
-\cventry{}{}{Docker-DHCP on host bridge \textnormal{$|$ \textit{Networking}}}{\textnormal{2023-ongoing}}{}{}{\kern-5mm}{\cvlistitem{
-    Building a network driver for networking on a host bridge with DHCP-allocated IP addresses in Go
-}
-}
+%-----------INVOLVEMENT---------------
+\section{Position and Responsibility}
+\vspace{-25pt}
+    \resumeSubHeadingListStart
+        \resumeSubheading{}{}{}{}
+            \resumeItemListStart
+                \resumeItem{Carried out Linux-Wargames and took Linux-related sessions.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
 
 
-
-
-\vspace{0.15cm}
-
-\cventry{}{}{Scalable Platform as a Service  \textnormal{$|$ \textit{System Design}}}{}{}{}{\kern-5mm}{\cvlistitem{
-    Built an \textbf{auto-scaling} container-based PaaS framework by implementing NGINX reverse-proxy to load-balance services controlled by replicated \textbf{Django-server} through Docker-Swarm
-}
-\cvlistitem{
-    Provided a deployment platform, auto-configuring clients for Linux and Windows systems and TLS verification and encryption from the client side
-}
-}
-
-\vspace{0.15cm}
-
-
-
-\cventry{}{}{Web-based Labs   \textnormal{$|$ \textit{Web application}}}{\textnormal{2022-ongoing}}{}{}{\kern-5mm}{\cvlistitem{
-    Developing a User-friendly Web app with \textbf{ReactJS} providing services offered by the Compute service framework 
-}
-\cvlistitem{Implementing a built-in terminal and various conventional practices and security features   }
-}
-
-\vspace{0.15cm}
-
-\cventry{}{}{D-RAM Addressing Attack  \textnormal{$|$ \textit{Computer architecture}}}{}{}{}{\kern-5mm}{\cvlistitem{
-    Performed a timing attack on intel core i5 to reverse engineer the confidential address mappings
-}
-\cvlistitem{Established a \textbf{Covert-Channel} to perform illicit inter-process communication between the host and isolated VM}
-}
-{\kern-2mm}
-\section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{  Technical Skills}}
-\cvitem{Languages}{C/C++, Go, Python, JavaScript, PHP, Bash, SQL, \LaTeX}
-\cvitem{Software Tools}{git, GitHub, Docker, Jenkins, Wireshark, Kubernetes, Ansible, Localstack, Terraform(Localstack)} 
-\cvitem{Databases}{MySQL, MongoDB, Redis}
-\cvitem{Web Development}{HTML5, CSS3, JavaScript, Node.js, ReactJS, ExpressJS, Django}
-\cvitem{Platforms}{Linux,FreeBSD, and Windows}
-\cvitem{Routing and Switching}{GNS3 and EVE-NG}
-\cvitem{Firewalls}{Palo-Alto, Fortigate}
-{\kern-2mm}
-\section{\raisebox{0.09cm}{\rule{2.5cm}{0.15cm}}\textnormal{  Position and Responsibility}}
-\cvlistitem{Carried out Linux-Wargames and took Linux-related sessions}
-
-\clearpage
-\end{document}5
+\end{document}
