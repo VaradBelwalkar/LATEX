@@ -55,11 +55,18 @@
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeItemSubheading}[4]{
 \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} &	 #2 \\
       \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[2]{
+\vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} &	 #2 
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -87,18 +94,19 @@
 %----------HEADING-----------------%
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\LARGE Varad Belwalkar}} & Email: \href{mailto:}{belwalkarvarad@gmail.com}\\
-   \href{https://github.com/VaradBelwalkar}{Github: ~~github.com/VaradBelwalkar} &  Mobile:~~~+91-9766341094 \\   
-  \href{https://hub.docker.com/u/VaradBelwalkar}{Docker: ~~hub.docker.com/VaradBelwalkar} \\
+  \href{https://belwalkarvarad.tech}{Website: ~belwalkarvarad.tech} &  Mobile:~~~+91-9766341094\\
+   \href{https://github.com/VaradBelwalkar}{Github: ~~github.com/VaradBelwalkar}  \\   
+  \href{https://hub.docker.com/u/varadbelwalkar}{Docker: ~~hub.docker.com/u/varadbelwalkar} \\
 \end{tabular*}
 
 %-----------EDUCATION-----------------%
 \section{~~Education}
 \vspace{4pt}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeItemSubheading
       {D Y Patil college of engineering and technology}{Kolhapur, India}
       {Bachelor of Technology - Computer Science and Engineering;  GPA: 8.46}{2020-ongoing}
-     \resumeSubheading
+     \resumeItemSubheading
       {S.M. Lohiya Highschool\hspace{0.21cm} $|$ \hspace{0.18cm}New College, Kolhapur}{Kolhapur, India}
       {Grade:  96.2\% \hspace{2.3cm}$|$ \hspace{0.2cm}HSC, 12th Grade: 83.3\%}{2018 $|$ 2020}
 \vspace{4pt}   
@@ -108,13 +116,13 @@
 \section{Skills Summary}
 \vspace{4pt}
 	\resumeSubHeadingListStart
-	\resumeSubItem{Languages:}{~~~~~~~~~~~~~~C/C++, Go, Python, JavaScript, PHP, Bash, Powershell, SQL, \LaTeX}
-	\resumeSubItem{Software Tools:}{~~~~~~~Git, GitHub, Docker, Jenkins, Wireshark, Kubernetes, Ansible, Localstack, Terraform(Localstack)}
-	\resumeSubItem{Databases:}{~~~~~~~~~~~~~~MySQL, MongoDB, SQLite, Redis}
-	\resumeSubItem{Web Dev:}{~~~~~~~~~~~~~~~~HTML5, CSS3, JavaScript, Node.js, ReactJS, ExpressJS, Django, GraphQL}
-	\resumeSubItem{Platforms:}{~~~~~~~~~~~~~~~Linux, MacOS, and Windows}
-        \resumeSubItem{Routing/Switching:}{~GNS3 and EVE-NG}
-        \resumeSubItem{Firewalls:}{~~~~~~~~~~~~~~~~Palo-Alto, Fortigate}
+	\resumeSubItem{Languages:}{ \hspace{1.3cm}C/C++, Go, Python, JavaScript, PHP, Bash, Powershell, SQL, \LaTeX}
+	\resumeSubItem{Software Tools:}{~~~~~~~Git, GitHub, Docker, LXD, Podman, Jenkins, Wireshark, Kubernetes, Ansible, Localstack,\\  \hspace{3.415 cm}Terraform, EVE-NG}
+	\resumeSubItem{Databases:}{ \hspace{1.4cm}MySQL, MongoDB, SQLite, Redis}
+	\resumeSubItem{Web Dev:}{ \hspace{1.55cm}HTML5, CSS3, JavaScript, Node.js, ReactJS, ExpressJS, Django, GraphQL}
+	\resumeSubItem{Platforms:}{ \hspace{1.5cm}Linux and Windows}
+	\resumeSubItem{Cloud Platforms:}{ \hspace{0.37cm}Amazon Web Services (AWS), Microsoft Azure}
+        \resumeSubItem{Firewalls:}{ \hspace{1.62cm}Palo-Alto, Fortigate}
 \vspace{4pt}
 \resumeSubHeadingListEnd
 %----------------------Experience---------------------------------%
@@ -122,8 +130,8 @@
 \section{Experience}
 \vspace{4pt}
 \resumeSubHeadingListStart
-	\resumeSubItem{}{Deployed and maintaining the college server to ensure seamless access and availability of resources for students and faculties}
-	\resumeSubItem{}{ Published PaaS Framework as Docker image which has over \textbf{2.8K+} pulls on Docker Hub}
+        \resumeSubItem{}{Deployed and maintaining the college server to ensure seamless access and availability of resources}
+	\resumeSubItem{}{Published PaaS Framework as Docker image which has over \textbf{2.8K+} pulls on Docker Hub}
 \vspace{4pt}
 \resumeSubHeadingListEnd
 %-----------PROJECTS-----------------%
@@ -132,7 +140,7 @@
 \vspace{4pt}
   \resumeSubHeadingListStart
     \resumeSubheading{Compute Services   \textnormal{$|$ \textit{Distributed Systems}}}{}
-    {}{}\vspace{-12pt}
+    \vspace{-12pt}
     \resumeItemListStart
         \resumeItem{}
           {Engineered backend in Go to provide storage and container services by utilizing docker-SDK for Go}
@@ -145,7 +153,7 @@
 %---------------Project2----------------------------
     \resumeSubheading
 		{Load Balancing standalone docker engines \textnormal{$|$ \textit{Hobby Research Project} }}{2023-ongoing}
-		{}{}\vspace{-12pt}
+	     \vspace{-12pt}
 		\resumeItemListStart
         \resumeItem{}
           {Developing a custom \textbf{load-balancer} in \textbf{Go} to facilitate the load balancing on multiple nodes}
@@ -158,7 +166,7 @@
 
 \resumeSubheading
 		{Docker-DHCP on host bridge \textnormal{$|$ \textit{Networking}}}{}
-		{}{}\vspace{-12pt}
+		\vspace{-12pt}
 		\resumeItemListStart
         \resumeItem{}
           {Built a network driver for networking on a host bridge with DHCP-allocated IP addresses in Go}
@@ -168,10 +176,10 @@
 %----------------Project3-----------------------------------
 \resumeSubheading
 		{Ethereum-Facilitated Secure Tunnelling  \textnormal{$|$ \textit{Blockchain Technology}}}{}
-		{}{}\vspace{-12pt}
+		\vspace{-12pt}
 		\resumeItemListStart
         \resumeItem{}
-          {Leveraged Smart Contracts on the PoA test network sepolia  for End-to-End highly concurrent Webhook interface between client and server behind NAT, with RESTful client implemented in Django}
+          {Leveraged Smart Contracts on the PoA test network sepolia  for End-to-End highly concurrent Webhook interface\\  \hspace{0.03 cm} between client and server behind NAT, with RESTful client implemented in Django}
         \resumeItem{}
           {Only Contract owners will be able to communicate through the tunnel}
 
@@ -180,30 +188,30 @@
 %----------------Project4-----------------------------------
 \resumeSubheading
 		{Decentralized Document Verification  \textnormal{$|$ \textit{Blockchain Technology}}}{}
-		{}{}\vspace{-12pt}
+		\vspace{-12pt}
 		\resumeItemListStart
         \resumeItem{}
-          {Developed a blockchain-based certificate verification system to enhance the security and authenticity of academic credentials issued by educational institutions.}
+          {Developed a blockchain-based certificate verification system to enhance the security and authenticity of academic\\  \hspace{0.03 cm} credentials issued by educational institutions.}
         \resumeItem{}
-          {Implemented a Merkle tree based for enhanced security and efficiency in verifying academic credentials}
+          {Implemented a Merkle tree as a base for enhanced security and efficiency in verifying academic credentials}
 
 		\resumeItemListEnd
 
 %----------------Project5---------------------------------
 \resumeSubheading
 		{Scalable Platform as a Service  \textnormal{$|$ \textit{System Design}}}{}
-		{}{}\vspace{-12pt}
+		\vspace{-12pt}
 		\resumeItemListStart
         \resumeItem{}
-          {Built an \textbf{auto-scaling} container-based PaaS framework by implementing NGINX reverse-proxy to load-balance services controlled by replicated \textbf{Django-server} through Docker-Swarm}
+          {Built an \textbf{auto-scaling} container-based PaaS framework by implementing NGINX reverse-proxy to load-balance services\\  \hspace{0.03 cm} controlled by replicated \textbf{Django-server} through Docker-Swarm}
         \resumeItem{}
-          {Provided a deployment platform, auto-configuring clients for Linux and Windows systems and TLS verification and encryption from the client side}
+          {Provided a deployment platform, auto-configuring clients for Linux and Windows systems and TLS verification and\\  \hspace{0.03 cm} encryption from the client side}
 		\resumeItemListEnd
 
 %----------------Project6----------------------------------
 \resumeSubheading
 		{Web-based Labs   \textnormal{$|$ \textit{Web application}}}{}
-		{}{}\vspace{-12pt}
+	\vspace{-12pt}
 		\resumeItemListStart
         \resumeItem{}
           {Developed a User-friendly Web app with \textbf{ReactJS} providing services offered by the Compute service framework}
@@ -214,7 +222,7 @@
 %----------------Project7----------------------------------
 \resumeSubheading
 		{D-RAM Addressing Attack  \textnormal{$|$ \textit{Computer architecture}}}{}
-		{}{}\vspace{-12pt}
+	\vspace{-12pt}
 		\resumeItemListStart
         \resumeItem{}
           {Performed a timing attack on intel core i5 to reverse engineer the confidential address mappings}
@@ -241,4 +249,4 @@
  
 \resumeSubHeadingListEnd
 
-\end{document}
+\end{document}zzz
